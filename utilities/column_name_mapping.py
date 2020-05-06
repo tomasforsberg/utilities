@@ -23,6 +23,12 @@ class TwoWayNameMapper:
         
         self.version = '1.0'
     
+    def get_rename_dict(self):
+        return self.key_value_dict
+    
+    def get_reverse_rename_dict(self):
+        return self.value_key_dict
+    
     def add(self, from_name, to_name):
         self.key_value_dict[from_name] = to_name
         self.value_key_dict[to_name] = from_name
