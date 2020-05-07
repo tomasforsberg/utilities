@@ -6,6 +6,9 @@ class dtype_summarizer:
         self.dtypes = list(self.d.keys())
         print('Available dtypes:', self.dtypes)
     
+    def cols_of_type(self, t):
+        return list(self.d[t].keys())
+    
     def __str__(self):
         for t in self.d:
             print('|---------------------------------------')
