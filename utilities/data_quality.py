@@ -45,7 +45,7 @@ def distplot_grid(df, cols, subplot_cols=4, figsize_multiplier=3, transformation
     default_fig_width, default_fig_height = plt.rcParams.get('figure.figsize')
     new_figsize = (figsize_multiplier * default_fig_width, default_fig_height * subplot_rows)
     fig, axes = plt.subplots(subplot_rows, subplot_cols, figsize=new_figsize)
-    fig.tight_layout(pad=3)
+    fig.tight_layout(pad=4)
     for i in range(len(cols)):
         col = cols[i]
         
